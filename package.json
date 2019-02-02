@@ -2,6 +2,10 @@
   "name": "Roman_Numerals",
   "version": "1.0.0",
   "description": "A Roman numeral converter that converts integer numbers into Roman numerals",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint index.js"
+  },
   "main": "index.js",
   "repository": "git@github.com:Juli0GT/Roman_Numerals_JS.git",
   "author": "Juli0GT <julio.gteran@gmail.com>",
