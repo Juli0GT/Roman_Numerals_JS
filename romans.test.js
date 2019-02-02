@@ -29,3 +29,18 @@ test('converts 500 to D', () => {
   const decimal = 500;
   expect(romans(decimal)).toBe('D');
 });
+
+test('converts 3 to III', () => {
+  const decimal = 3;
+  expect(romans(decimal)).toBe('III');
+});
+
+test('converts 20 to XX', () => {
+  const decimal = 20;
+  expect(romans(decimal)).toBe('XX');
+});
+
+test('converts 55 to LV', () => {
+  const decimal = 55;
+  expect(romans(decimal)).toBe('LV');
+});
