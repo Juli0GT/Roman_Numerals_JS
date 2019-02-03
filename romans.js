@@ -48,6 +48,8 @@ const NUMBERS_TO_ROMANS = [
 const convertToRoman = (number) => {
   let rest = number;
   let romanNumeral = '';
+  if (number >= 900) return 'Sorry this converter can not convert such a big number';
+  if (number <= 0) return 'Sorry this converter can not convert values lower than 1';
   NUMBERS_TO_ROMANS.forEach((value) => {
     while (rest >= value.decimal) {
       romanNumeral += value.roman;
