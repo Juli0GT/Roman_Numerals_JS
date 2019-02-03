@@ -1,10 +1,28 @@
-const NUMBERS_TO_ROMANS = {
-  1: 'I',
-  5: 'V',
-  10: 'X',
-  50: 'L',
-  100: 'C',
-  500: 'D',
-};
+const NUMBERS_TO_ROMANS = [
+  {
+    decimal: 500,
+    roman: 'D',
+  },
+  {
+    decimal: 100,
+    roman: 'C',
+  },
+  {
+    decimal: 50,
+    roman: 'L',
+  },
+  {
+    decimal: 10,
+    roman: 'X',
+  },
+  {
+    decimal: 5,
+    roman: 'V',
+  },
+  {
+    decimal: 1,
+    roman: 'I',
+  },
+];
 
 module.exports = number => NUMBERS_TO_ROMANS[number];
