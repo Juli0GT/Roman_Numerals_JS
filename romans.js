@@ -4,20 +4,40 @@ const NUMBERS_TO_ROMANS = [
     roman: 'D',
   },
   {
+    decimal: 400,
+    roman: 'CD',
+  },
+  {
     decimal: 100,
     roman: 'C',
+  },
+  {
+    decimal: 90,
+    roman: 'XC',
   },
   {
     decimal: 50,
     roman: 'L',
   },
   {
+    decimal: 40,
+    roman: 'XL',
+  },
+  {
     decimal: 10,
     roman: 'X',
   },
   {
+    decimal: 9,
+    roman: 'IX',
+  },
+  {
     decimal: 5,
     roman: 'V',
+  },
+  {
+    decimal: 4,
+    roman: 'IV',
   },
   {
     decimal: 1,

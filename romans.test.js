@@ -51,16 +51,16 @@ test('converts 4 to IV', () => {
 });
 
 test('converts 9 to IX', () => {
-  const decimal = 20;
+  const decimal = 9;
   expect(romans(decimal)).toBe('IX');
 });
 
 test('converts 49 to XLIX', () => {
-  const decimal = 20;
+  const decimal = 49;
   expect(romans(decimal)).toBe('XLIX');
 });
 
 test('converts 94 to XCIV', () => {
-  const decimal = 90;
+  const decimal = 94;
   expect(romans(decimal)).toBe('XCIV');
 });
