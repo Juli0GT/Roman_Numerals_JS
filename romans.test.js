@@ -44,3 +44,23 @@ test('converts 55 to LV', () => {
   const decimal = 55;
   expect(romans(decimal)).toBe('LV');
 });
+
+test('converts 4 to IV', () => {
+  const decimal = 4;
+  expect(romans(decimal)).toBe('IV');
+});
+
+test('converts 9 to IX', () => {
+  const decimal = 20;
+  expect(romans(decimal)).toBe('IX');
+});
+
+test('converts 49 to XLIX', () => {
+  const decimal = 20;
+  expect(romans(decimal)).toBe('XLIX');
+});
+
+test('converts 94 to XCIV', () => {
+  const decimal = 90;
+  expect(romans(decimal)).toBe('XCIV');
+});
