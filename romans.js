@@ -48,14 +48,12 @@ const NUMBERS_TO_ROMANS = [
 const convertToRoman = (number) => {
   let rest = number;
   let romanNumeral = '';
-
   NUMBERS_TO_ROMANS.forEach((value) => {
     while (rest >= value.decimal) {
       romanNumeral += value.roman;
       rest -= value.decimal;
     }
   });
-  console.log(romanNumeral);
   return romanNumeral;
 };
 

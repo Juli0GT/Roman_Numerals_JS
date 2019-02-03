@@ -64,3 +64,19 @@ test('converts 94 to XCIV', () => {
   const decimal = 94;
   expect(romans(decimal)).toBe('XCIV');
 });
+
+
+test('converts 335 to CCCXXXV', () => {
+  const decimal = 335;
+  expect(romans(decimal)).toBe('CCCXXXV');
+});
+
+test('converts 478 to CDLXXVIII', () => {
+  const decimal = 478;
+  expect(romans(decimal)).toBe('CDLXXVIII');
+});
+
+test('converts 789 to DCCLXXXIX', () => {
+  const decimal = 789;
+  expect(romans(decimal)).toBe('DCCLXXXIX');
+});
