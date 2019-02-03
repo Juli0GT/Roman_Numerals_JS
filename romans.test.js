@@ -80,3 +80,13 @@ test('converts 789 to DCCLXXXIX', () => {
   const decimal = 789;
   expect(romans(decimal)).toBe('DCCLXXXIX');
 });
+
+test('converter can not convert values equal or higher than 900', () => {
+  const decimal = 900;
+  expect(romans(decimal)).toBe('Sorry this converter can not convert such a big number');
+});
+
+test('converter can not convert values equal or lower than 0', () => {
+  const decimal = 0;
+  expect(romans(decimal)).toBe('Sorry this converter can not convert values lower than 1');
+});
